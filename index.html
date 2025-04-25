@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="scrollFrame">
+            <div class="formContainer"></div>
+            <div class="listContainer" style="display: none">
+                <h1>Books:</h1>
+                <button class="addButton">Add Book</button>
+                <ul id="libraryList" class="libraryList">
+
+                </ul>
+                <div class="navigation">
+
+                    <button class="back">&lt;</button>
+                    <p>1</p>
+                    <button class="forward">&gt;</button>
+                </div>
+            </div>
+            <div class="pageContainer" style="display: none;">
+                <button class="bigBack">Back</button>
+                <button class="bigDelete">Delete</button>
+                <div class="bigPage">
+                    <h1 class="bigTitle">Title</h1>
+                    <h2 class="bigAuthor">Author: Johnny Msmis</h2>
+                    <h3 class="bigPages">Pages: ###</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
