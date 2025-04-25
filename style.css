@@ -179,10 +179,122 @@ li div {
     align-items: center;
 }
 
-button:hover {
-    opacity: 80%;
+button:hover,
+input[type="button"]:hover {
+    filter: brightness(80%)
 }
 
-button:active {
-    opacity: 100%;
+button:active,
+input[type="button"] {
+    filter: brightness(100%)
+}
+
+form {
+    position: relative;
+}
+
+form div {
+    margin-left: 1rem;
+    text-align: start;
+}
+
+form div {
+    margin-top: 2rem;
+}
+
+form div label {
+    font-size: 1.25rem;
+}
+
+form div input {
+    font-size: 1.25rem;
+}
+
+form div input {
+    width: 70%
+}
+
+.pages {
+    width: 4rem;
+}
+
+input {
+    appearance: none;
+
+}
+
+button[type="submit"] {
+    background-color: green;
+    border: none;
+    border-radius: 10%;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    caret-color: black;
+    margin-left: 0.5rem;
+}
+
+input[type="checkbox"] {
+    background-color: gray;
+    height: 1rem;
+    width: 1rem;
+    border-bottom: none;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.70rem;
+    margin-left: 0.5rem;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.375)
+}
+
+input:focus {
+    outline: none;
+
+}
+
+input[type="checkbox"]::before {
+    content: "✓";
+}
+
+.readContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+
+}
+
+input[type="checkbox"]:hover {
+    filter: brightness(80%)
+}
+
+input:user-invalid {
+    border-bottom-color: red;
+}
+
+input:placeholder-shown {
+    border-bottom-color: black;
+}
+
+form .back {
+    position: absolute;
+    background-color: gray;
+    top: 1rem;
+    left: 1rem;
+}
+
+form .back:hover {
+    background-color: green;
 }

@@ -12,18 +12,41 @@
 
     <main>
         <div class="scrollFrame">
-            <div class="formContainer"></div>
-            <div class="listContainer" style="display: none">
+            <div class="formContainer" id="formContainer" style="display: none;">
+                <form id="bookData">
+                    <button class="back" id="returnHomeForm">&lt;</button>
+                    <h1>New Book</h1>
+                    <div>
+                        <label for="title">Title:</label>
+                        <input id="title" minlength="1" required placeholder="The Wizard of Oz" />
+                    </div>
+                    <div>
+                        <label for="author">Author:</label>
+                        <input id="author" minlength="1" required placeholder="L. Frank Baum" />
+                    </div>
+                    <div>
+                        <label for="pages">Pages:</label>
+                        <input id="pages" class="pages" type="text" required placeholder="298" pattern="\d*"
+                            inputmode="numeric" minlength="1" />
+                    </div>
+                    <div class="readContainer">
+                        <label for="read">Read:</label>
+                        <input id="read" type="checkbox" optional />
+                    </div>
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+            <div class="listContainer" id="listContainer">
                 <h1>Books:</h1>
-                <button class="addButton">Add Book</button>
+                <button class="addButton" id="addButton">Add Book</button>
                 <ul id="libraryList" class="libraryList">
 
                 </ul>
                 <div class="navigation">
 
-                    <button class="back">&lt;</button>
-                    <p>1</p>
-                    <button class="forward">&gt;</button>
+                    <button class="back" id="pageMin">&lt;</button>
+                    <p id="pageNum">1</p>
+                    <button class="forward" id="pageAdd">&gt;</button>
                 </div>
             </div>
             <div class="pageContainer" style="display: none;">
